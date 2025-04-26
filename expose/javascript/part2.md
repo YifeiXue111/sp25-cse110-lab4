@@ -1,9 +1,9 @@
 1. What will happen at line 12 and why? If the code causes an error, explain why.
-   3
+   It will print 3 to the console because i is the loop counter, and after the loop finishes, i is 3.
 2. What will happen at line 13 and why? If the code causes an error, explain why.
-   150
+   It will print 150 to the console because discountedPrice retains its last value from the loop’s final iteration.
 3. What will happen at line 14 and why? If the code causes an error, explain why.
-   150
+   It will print 150 to the console because finalPrice retains its last value from the loop’s final iteration.
 4. What will this function return? Give a brief explanation why. If the code causes an error, explain why.
    This function returns [50, 100, 150] because it applies a 50% discount to each item in the input array [100, 200, 300]. Inside the loop, each discounted price is calculated by multiplying the original price by (1 - discount), which equals 0.5. The result is then rounded to two decimal places using Math.round(... * 100) / 100 and added to the discounted array. 
 5. What will happen at line 12 and why?  If the code causes an error, explain why. (assume this function is being called like the others: discountPrices([100, 200, 300], 0.5)).
@@ -11,13 +11,13 @@
 6. What will happen at line 13 and why? If the code causes an error, explain why. 
    This will throw an error because the code is trying to access discountedPrice outside the for loop, and discountedPrice is defined as let, so discountedPrice is not defined.
 7. What will happen at line 14 and why? If the code causes an error, explain why.
-   150
+   It will print 150 to the console because finalPrice retains its last value from the loop’s final iteration (Math.round(150 * 100) / 100 = 150).
 8. What will this function return? Give a brief explanation. If the code causes an error, explain why.
    This function returns [50, 100, 150] because it applies a 50% discount to each item in the input array [100, 200, 300]. Inside the loop, each discounted price is calculated by multiplying the original price by (1 - discount), which equals 0.5. The result is then rounded to two decimal places using Math.round(... * 100) / 100 and added to the discounted array.
 9.  What will happen at line 11 and why? If the code causes an error, explain why.
     This will throw an error because the code is trying to access i outside the for loop and i is defined as let, so i is not defined.
 10. What will happen at line 12 and why? If the code causes an error, explain why.
-    3
+    It will print 3 to the console because length is set to prices.length (which is 3) at the start of the function and remains unchanged.
 11. What will this function return? Give a brief explanation. If the code causes an error, explain why.
     This function returns [50, 100, 150] because it applies a 50% discount to each price in the input array [100, 200, 300]. It calculates each discounted price by multiplying the original price by (1 - discount), which is 0.5, and stores the results in a new array. The loop runs correctly, and all variables are scoped properly using let and const. 
 12. Given the above Object, write the notation for:
